@@ -18,14 +18,17 @@ public class Control_Unit {
 	
 	void addvotes(Candidates i)
 	{
-		if(Candidates_votes.containsKey(i))
-		{
-		
-			Candidates_votes.put(i, Candidates_votes.get(i) + 1);
-			
+		for (Entry<Candidates, Integer> entry : Candidates_votes.entrySet()) {
+		    Candidates key = entry.getKey();
+			 Integer value = entry.getValue();
+		    if(key.name==i.name && key.party==i.party)
+		 {
+			 value++;
+			 Candidates_votes.put(key,value);
+		 }    
 		}
 		
-	}
+		}
 	
 	
 void addCandidates(Candidates c)
