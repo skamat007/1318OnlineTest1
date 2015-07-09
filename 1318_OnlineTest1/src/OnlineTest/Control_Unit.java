@@ -45,8 +45,6 @@ void TotalVotes()
 	    System.out.println("Candidate name is "+key.name+" Candidate Party is "+key.party+" votes-> "+value);
 	System.out.println("<-------------------------------------------------------------------------------->");
 	
-	
-	
 	}
 	}
 	
