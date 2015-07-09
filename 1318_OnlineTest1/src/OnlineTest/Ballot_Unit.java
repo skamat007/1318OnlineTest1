@@ -7,11 +7,11 @@ ArrayList<Candidates> candidatesList=new ArrayList<Candidates>();
 Lamp context = new Lamp();
 On startstate = new On();
 Off stopState = new Off();
-Button Bt=new Button();
+//Button Bt=new Button();
 
 Ballot_Unit(){
 	stopState.doAction(context);
-	startstate.doAction(context);	
+	startstate.doAction(context);
 }
 
 

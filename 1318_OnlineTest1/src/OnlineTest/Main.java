@@ -1,5 +1,7 @@
 package OnlineTest;
 
+import java.util.Iterator;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -9,9 +11,13 @@ public class Main {
 		evm.Bu.addC("Rahul", "Shivsena");
 		evm.Bu.addC("Babush", "MNS");
 		evm.Bu.displayList();
-		Candidates c=new Candidates("Shripad","Bjp");
+		Iterator<Candidates> itr=evm.Bu.candidatesList.iterator();
+		while(itr.hasNext())
+		evm.Cu.addCandidates(itr.next());
+		Candidates c=new Candidates("Shripad","BJP");
+		evm.Cu.TotalVotes();
 		evm.Cu.addvotes(c);
-		evm.Bu.displayList();
+		evm.Cu.TotalVotes();
 		
 	}
 
