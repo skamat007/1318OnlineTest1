@@ -15,10 +15,18 @@ public class Main {
 		while(itr.hasNext())
 		evm.Cu.addCandidates(itr.next());
 		Candidates c=new Candidates("Shripad","BJP");
+		Candidates c1=new Candidates("Mohanrao", "Congress");
+		
 		evm.Cu.TotalVotes();
 		evm.Cu.addvotes(c);
 		evm.Cu.TotalVotes();
-		
+		evm.Cu.addvotes(c);
+		evm.Cu.addvotes(c);
+		evm.Cu.addvotes(c);
+		evm.Cu.addvotes(c);
+		evm.Cu.addvotes(c1);
+		evm.Cu.TotalVotes();
+			
 	}
 
 }

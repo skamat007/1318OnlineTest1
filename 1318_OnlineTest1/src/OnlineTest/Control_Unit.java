@@ -41,7 +41,9 @@ void TotalVotes()
 	for (Entry<Candidates, Integer> entry : Candidates_votes.entrySet()) {
 	    Candidates key = entry.getKey();
 	    Integer value = entry.getValue();
-	System.out.println("Candidate name is "+key.name+"Candidate Party is "+key.party+" votes-> "+value);
+		System.out.println("<-------------------------------------------------------------------------------->");
+	    System.out.println("Candidate name is "+key.name+" Candidate Party is "+key.party+" votes-> "+value);
+	System.out.println("<-------------------------------------------------------------------------------->");
 	
 	
 	
